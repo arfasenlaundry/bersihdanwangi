@@ -1,0 +1,174 @@
+:root {
+    --primary: #4da3ff;
+    --secondary: #eaf4ff;
+    --dark: #0b2e4f;
+}
+
+body {
+    padding-top: 70px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(
+        rgba(77,163,255,0.8),
+        rgba(77,163,255,0.8)
+    ),
+    url("https://images.unsplash.com/photo-1581578731548-c64695cc6952") center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero .btn {
+    background-color: white;
+    color: var(--primary);
+    border-radius: 30px;
+    padding: 12px 30px;
+}
+
+.btn-primary {
+    background-color: #03a9f4;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0288d1;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+footer {
+    background-color: #03a9f4;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+.card {
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   WhatsApp Floating Button
+========================= */
+.wa-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+
+.wa-float:hover {
+    transform: scale(1.1);
+    background-color: #1ebe5d;
+}
+
+.card {
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    /* HERO */
+    .hero {
+        height: auto;
+        padding: 120px 20px 80px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* BUTTON */
+    .btn-lg {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+
+    /* CARD */
+    .card {
+        margin-bottom: 20px;
+    }
+
+    /* ICON */
+    .fa-3x {
+        font-size: 2.5em;
+    }
+
+    /* SECTION SPACING */
+    section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* FOOTER */
+    footer {
+        font-size: 0.9rem;
+    }
+
+    /* WHATSAPP BUTTON */
+    .wa-float {
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+}
